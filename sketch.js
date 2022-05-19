@@ -2,7 +2,7 @@ var sea,ship;
 var seaImg,shipImg;
 
 function preload(){
-  //uncomment the code to add animation to ship 
+  //descomente o código para adicionar animação do navio
 
   shipImg1 = loadAnimation("ship-1.png");
   //shipImg1 = loadAnimation("ship-1.png");
@@ -17,7 +17,7 @@ function setup(){
   createCanvas(400,400);
   background("blue");
 
-  // Moving background
+  //plano de fundo
   sea=createSprite(400,200);
   sea.addImage(seaImg);
   sea.velocityX = -5;
@@ -34,7 +34,7 @@ function draw() {
   background(0);
   sea.velocityX = -3;
 
-  //uncomment code to reset the background
+  //descomente o código para redefinir o plano de fundo
   if(sea.x < 0){
     //sea.x = 0;
     //sea.x = sea.width;
