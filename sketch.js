@@ -2,22 +2,19 @@ var sea,ship;
 var seaImg,shipImg;
 
 function preload(){
+  seaImg = loadImage("sea.png");
   //descomente o código para adicionar animação do navio
-
-  shipImg1 = loadAnimation("ship-1.png");
   //shipImg1 = loadAnimation("ship-1.png");
   //shipImg1 = loadAnimation("ship-1");
   //shipImg1 = loadAnimation("ship-1.png","ship-2.png","ship-1.png","ship-2.png");
   //shipImg1 = loadAnimation("ship-1","ship-2","ship-1","ship-2");
-  
-  seaImg = loadImage("sea.png");
 }
 
 function setup(){
   createCanvas(400,400);
   background("blue");
 
-  //plano de fundo
+  // plano de fundo
   sea=createSprite(400,200);
   sea.addImage(seaImg);
   sea.velocityX = -5;
@@ -34,14 +31,15 @@ function draw() {
   background(0);
   sea.velocityX = -3;
 
-  //descomente o código para redefinir o plano de fundo
+  
+ //descomente o código para redefinir o plano de fundo
   if(sea.x < 0){
-    //sea.x = 0;
+     //sea.x = 0;
     //sea.x = sea.width;
     //sea.x = sea.width/8;
     //sea.y = height;
   }
-
- 
+  }
+    
   drawSprites();
 }
